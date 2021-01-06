@@ -19,7 +19,7 @@ protocol FlushDelegate {
 class Flush: AppLifecycle {
     var timer: Timer?
     var delegate: FlushDelegate?
-    var useIPAddressForGeoLocation = true
+    var useIPAddressForGeoLocation = false
     var flushRequest: FlushRequest
     var flushOnBackground = true
     var _flushInterval = 0.0
